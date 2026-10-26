@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "metric": "l1",
+  "epsilon": 0.001,
+  "max_steps": 100000,
+  "experiment": "network_structures",
+  "description": "Small reversible families: controlled same-n point starts at nodes 0 and 1, uniform and each chain stationary starts. Similar-gap search is descriptive.",
+  "cases": [
+    {
+      "id": "uniform6",
+      "model": "uniform_network",
+      "parameters": {
+        "n": 6
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "cluster_c05",
+      "model": "two_cluster",
+      "parameters": {
+        "n_per_group": 3,
+        "c": 0.05
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "cluster_c10",
+      "model": "two_cluster",
+      "parameters": {
+        "n_per_group": 3,
+        "c": 0.1
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "cluster_c20",
+      "model": "two_cluster",
+      "parameters": {
+        "n_per_group": 3,
+        "c": 0.2
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "cluster_c25",
+      "model": "two_cluster",
+      "parameters": {
+        "n_per_group": 3,
+        "c": 0.25
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "bridge_w0p05",
+      "model": "bottleneck_network",
+      "parameters": {
+        "n_per_group": 3,
+        "bridge_weight": 0.05,
+        "self_loop": 1.0
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "bridge_w0p2",
+      "model": "bottleneck_network",
+      "parameters": {
+        "n_per_group": 3,
+        "bridge_weight": 0.2,
+        "self_loop": 1.0
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "bridge_w0p5",
+      "model": "bottleneck_network",
+      "parameters": {
+        "n_per_group": 3,
+        "bridge_weight": 0.5,
+        "self_loop": 1.0
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "bridge_w1p0",
+      "model": "bottleneck_network",
+      "parameters": {
+        "n_per_group": 3,
+        "bridge_weight": 1.0,
+        "self_loop": 1.0
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "hub_lazy50",
+      "model": "hub_spoke",
+      "parameters": {
+        "n": 6,
+        "laziness": 0.5
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "hub_lazy75",
+      "model": "hub_spoke",
+      "parameters": {
+        "n": 6,
+        "laziness": 0.75
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "hub_lazy80",
+      "model": "hub_spoke",
+      "parameters": {
+        "n": 6,
+        "laziness": 0.8
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    },
+    {
+      "id": "hub_lazy90",
+      "model": "hub_spoke",
+      "parameters": {
+        "n": 6,
+        "laziness": 0.9
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    }
+  ],
+  "gap_match_tolerance": 0.01,
+  "selected_traces": [
+    "uniform6:point0",
+    "cluster_c10:point0",
+    "bridge_w0p05:point0",
+    "hub_lazy80:point0",
+    "hub_lazy80:uniform",
+    "hub_lazy80:point1"
+  ],
+  "optional_cases": [
+    {
+      "id": "asymmetric_ring",
+      "model": "asymmetric_network",
+      "parameters": {
+        "n": 6,
+        "laziness": 0.5,
+        "bias": 0.8
+      },
+      "starts": [
+        {
+          "id": "point0",
+          "kind": "point",
+          "node": 0
+        },
+        {
+          "id": "point1",
+          "kind": "point",
+          "node": 1
+        },
+        {
+          "id": "uniform",
+          "kind": "uniform"
+        },
+        {
+          "id": "stationary",
+          "kind": "stationary"
+        }
+      ]
+    }
+  ]
+}

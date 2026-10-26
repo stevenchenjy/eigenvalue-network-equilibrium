@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+.matplotlib/
+.cache/
+build/
+dist/
+# Keep manuscript and private learning material outside the software repository.
+manuscript/
+study/
+.env
+.env.*
+*.pem
+*.key
+outputs/data/*
+!outputs/data/.gitkeep
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep

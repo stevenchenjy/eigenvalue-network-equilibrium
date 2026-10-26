@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "metric": "l1",
+  "epsilon": 0.001,
+  "max_steps": 100000,
+  "experiment": "baseline",
+  "description": "Exploratory baseline software-validation parameter sweep; known behavior is not a new discovery.",
+  "cases": [
+    {
+      "id": "c40",
+      "model": "four_room",
+      "parameters": {
+        "c": 0.4
+      },
+      "starts": [
+        {
+          "id": "A",
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c30",
+      "model": "four_room",
+      "parameters": {
+        "c": 0.3
+      },
+      "starts": [
+        {
+          "id": "A",
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c20",
+      "model": "four_room",
+      "parameters": {
+        "c": 0.2
+      },
+      "starts": [
+        {
+          "id": "A",
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "model": "four_room",
+      "parameters": {
+        "c": 0.1
+      },
+      "starts": [
+        {
+          "id": "A",
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "model": "four_room",
+      "parameters": {
+        "c": 0.05
+      },
+      "starts": [
+        {
+          "id": "A",
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "model": "four_room",
+      "parameters": {
+        "c": 0.02
+      },
+      "starts": [
+        {
+          "id": "A",
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "model": "four_room",
+      "parameters": {
+        "c": 0.01
+      },
+      "starts": [
+        {
+          "id": "A",
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "selected_traces": [
+    "c40:A",
+    "c10:A",
+    "c01:A"
+  ]
+}
