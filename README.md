@@ -4,6 +4,12 @@ Exploratory Python tools for asking how spectral gap, network structure and star
 
 **AI-assisted exploratory software. Instructor approval for assessed use has not been recorded.** Read [ACADEMIC_INTEGRITY.md](ACADEMIC_INTEGRITY.md) before proposing calculations or figures for graded work. This repository contains computational tools and experiment designs. The separately maintained manuscript and learning notes are outside this repository.
 
+## Four-room model
+
+![One step from Room 1. Each room in Group A has probability (1 − c) / 2. Each room in Group B has probability c / 2.](docs/four-room-model.svg)
+
+The diagram shows the first row of the [four-room transition matrix](src/network_models/matrices.py) used in the baseline and starting distribution experiments.
+
 ## Run locally
 
 Python 3.13 is the tested environment. Clone the repository and run:
